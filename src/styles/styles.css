@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  background-color: #252422;
+  color: #ccc5b9;
+  text-align: left;
+  font-family: "Signika", sans-serif;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.loading-img {
+  height: 200px;
+}
+
+.container {
+  margin: 15px auto 50px auto;
+}
+
+.container th {
+  text-align: center;
+  color: #f0865e;
+  padding: 15px 15px;
+  background-color: #252422;
+  margin-bottom: 10px;
+}
+
+.container td {
+  padding: 15px 15px;
+}
+
+.container td:nth-child(1) {
+  text-align: center;
+  color: #884125;
+  font-weight: bold;
+  padding: 0px;
+}
+
+.container tr:nth-child(odd) {
+  background-color: #3d3a37;
+}
+
+.container tr:nth-child(even) {
+  background-color: #33312e;
+}
+
+.container tr:hover {
+  background-color: #273e47;
+  -webkit-box-shadow: 0 6px 6px -6px #0e1119;
+  -moz-box-shadow: 0 6px 6px -6px #0e1119;
+  box-shadow: 0 6px 6px -6px #0e1119;
+}
+
+.container tr:hover td:last-child {
+  background-color: #ee7243;
+  color: #524e49;
+  font-weight: bold;
+
+  box-shadow: #ba5027 -1px 1px, #ba5027 -2px 2px, #ba5027 -3px 3px,
+    #ba5027 -4px 4px, #ba5027 -5px 5px, #ba5027 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-timing-function: line;
+}
+
+.select-div {
+  text-align: center;
+  width: 270px;
+  color: #f0865e;
+  position: fixed;
+  top: 0;
+  background-color: #252422;
+  z-index: 1000;
+  width: 100%;
+}
+
+select {
+  margin: 10px;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: #f0865b;
+  border: 1px solid #ee7242;
+  color: black;
+  cursor: pointer;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 11px 20px 15px 2px;
+}
+
+.paginate {
+  cursor: pointer;
+}
+
+.paginate i {
+  position: fixed;
+  width: 20px;
+  height: 5px;
+  border-radius: 2.5px;
+  background: #8f4326;
+  transition: all 0.15s ease;
+}
+
+.pagination-content {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 5px;
+  color: #ccc5b9;
+  background-color: #252422;
+}
+
+.pagination-content .pagination-div {
+  display: flex;
+  padding: 11px 10px 6px 11px;
+  width: 150px;
+  margin: auto;
+}
+
+.counter {
+  padding: 5px 5px 0px 7px;
+}
+
+.special-color {
+  color: #868179;
+}
+
+.current-pg-span {
+  color: #868179;
+}
+
+.loading-img {
+  animation: spin 7s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
